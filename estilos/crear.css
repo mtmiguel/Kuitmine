@@ -1,0 +1,863 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+    text-decoration: none; list-style: none;
+    outline: none; border: none;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 25rem;
+    background-color: #000001;  
+}
+
+
+.body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    background-color: #00000033;
+    width: 1rem;
+}
+
+
+.body::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    background-color: #ffffdd;
+    border-radius: 1rem;
+}
+
+
+.Header{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #050302;
+}
+
+
+.Header .headerdiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.Header div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.Header div .img-logo-containt{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    position: relative;
+}
+
+
+.Header .btnTemaContainer{
+    width: 100%;
+    background-color: #0a0505;
+    display: inline-flex;
+    justify-content: center;
+    height: 5rem;   
+}
+
+
+.Header .btnTemaContainer div{
+    margin: 1rem 0;
+    width: 3rem;
+    height: max-content;
+    overflow: hidden;
+    margin-left: 1.4rem;
+    cursor: pointer;    
+}
+
+
+.Header .btnTemaContainer div img{
+    transition: .4s;
+}
+
+
+.Header .btnTemaContainer div:hover img{
+    filter: brightness(200%);
+}
+
+
+.Header .btnTemaContainer .iconLuna{
+    margin-right: 2rem;
+}
+
+
+.Header .logo-contain{
+    width: 9rem;
+    height: max-content;
+    margin-top: 2rem;
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+.Header .imgPath{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    z-index: 100;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 45%;
+    z-index: 50;
+    filter: brightness(60%);
+    height: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2 img{
+    transform: scaleX(-1);
+}
+
+
+.Header .imgPath3{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 58%;
+    filter: brightness(20%);
+    height: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .Header_Nav{
+    background-color: #0a0505;
+    border-top: 2px solid #dfbe2d;
+    border-bottom: 5px solid #7a691d;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 6rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+
+.Header .Header_Nav .Header_Nav-UL{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint{
+    width: 66%;
+    height: 100%; 
+}
+
+
+.Header_Nav .Header_Nav-UL .nav-lisContaint li{
+    display: flex;
+    align-items: center; 
+}
+
+
+.Header_Nav-UL .nav-lisContaint li:nth-child(1) .enlace{
+    padding-left: 3rem !important; 
+    padding-right: 3rem !important;
+}
+
+
+.Header_Nav-UL .nav-lisContaint li .enlace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #dfbe2d;
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+    cursor: pointer;  
+}
+
+
+.Header_Nav-UL .nav-lisContaint li .enlace:hover{
+    background-color: #dfbe2d;
+    color: #0a0505;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 34%;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #dfbe2d;
+    transition: .4s;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace span{
+    color: #0a0505;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace:hover{
+    background-color: #7a691d;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace:hover span{
+    color: #dfbe2d;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace:hover .icon-user{
+    fill:#dfbe2d
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #dfbe2d;
+    transition: .4s;  
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace span{
+    color: #0a0505;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace:hover{
+    background-color: #7a691d;
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace:hover span{
+    color: #dfbe2d;
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace:hover .icon-salir{
+    fill:#dfbe2d
+}
+
+
+.Header_Nav-UL .iniRegiContain .icon-salir{
+    width: 10%;
+    height: max-content;
+    fill: #0a0505;
+    transition: .4s;
+}
+
+
+.Header_Nav-UL .iniRegiContain .icon-user{
+    width: 10%;
+    height: max-content;
+    fill: #0a0505;
+    transition: .4s;
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    position: relative;   
+}
+
+
+.main .main-spanIconContain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main .main-spanIconContain .main-spanPrin{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Inter Bold', sans-serif;
+    color: #ffffaa;
+    text-align: center;
+}
+
+
+.main .main-spanIconContain div{
+    margin-top: 2rem;
+    width: 7rem;
+    height: max-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main .containPrinCrear{
+    margin-top: 2rem;
+    background-color: #d3c48011;
+    width: 100%;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;  
+}
+
+
+.main .containPrinCrear .spanCrearPro{
+    width: 100%;
+    font-size: 2.4rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter SemiBold', sans-serif;
+    color: #0a0505;
+    background-color: #cfb84e;
+}
+
+
+.main .containPrinCrear .formActualizar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+}
+
+
+.main .containPrinCrear .formActualizar .divFormPrin{
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%; 
+}
+
+
+.main .formActualizar .divFormPrin label{
+    color: #ffffdd;
+    font-size: 1.6rem;
+}
+
+
+.main .formActualizar .divFormPrin .inputNombrePro{
+    margin-top: 2rem;
+    margin-left: 4.1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+.main .formActualizar .divFormPrin input:not([type="number"]){
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: #0a0505;
+    border: none;
+    border-bottom: 1px solid #dfbe2d;
+    outline:none;
+    color: #ffffdd;
+}
+
+
+.main .formActualizar .divFormPrin input::placeholder{
+    color: #8f8153;
+}
+
+
+.main .formActualizar .divFormPrin .divStock{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #124b5c55;
+    position: relative;
+}
+
+
+.main .formActualizar .divFormPrin .divStock label{
+    width: 100%;
+    margin: 2rem 0rem 1rem 4.1rem;
+    color: #537e8f;
+}
+
+
+.main .formActualizar .divFormPrin .divStock input{
+    width: 50%;
+    margin: 0rem 0rem 2rem 4.1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: #0f0a08;
+    color: #ffffdd;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    border: none;
+}
+
+
+.main .formActualizar .divFormPrin .divStock input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.main .formActualizar .divFormPrin .divStock svg{
+    width: 6rem;
+    height: max-content;
+    position: absolute;
+    right: 3rem;
+}
+
+
+.main .formActualizar .divFormPrin .divPrecio{
+    width: 100%;
+    background-color: #4c913e44;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;   
+}
+
+
+.main .formActualizar .divFormPrin .divPrecio .inputPrecio{
+    margin: 0rem 0 2rem 4.1rem;
+    font-size: 1.6rem;
+    width: 50%;
+    background-color: #0f0a08;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    color: #ffffdd;
+    padding: 1.3rem 1.5rem 1rem 1.5rem;
+}
+
+
+.main .formActualizar .divFormPrin .divPrecio .inputPrecio::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.main .formActualizar .divFormPrin .divPrecio span{
+    width: 100%;
+    color: #538f56;
+    font-size: 1.6rem;
+    margin: 2rem 0 1rem 4.1rem;
+}
+
+
+.main .formActualizar .divFormPrin .divPrecio svg{
+    width: max-content;
+    height: 7rem;
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #332c0e55;
+    border-bottom: 2px dashed #dfbe2d;
+    padding-bottom: 0;
+    align-items: center;
+    position: relative;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria .divCategoria2{
+    width: 100%;
+    background-color: #63642588;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria .divCategoria2 span{
+    color: #ffffdd;
+    font-size: 1.6rem;
+    margin: 2rem 0rem 2rem 4.1rem;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria .divCategoria2 a{
+    font-size: 1.6rem;
+    color: #ffffdd;
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #f7da59;
+    transition: .4s;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria .divCategoria2 a:hover{
+    color: #fff3c0;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria label{
+    width: 100%;
+    color: #8f8153;
+    margin: 2rem 0rem 1rem 4.1rem;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria select{
+    width: 50%;
+    background-color: #0a0505;
+    color: #dfbe2d;
+    border: none;
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 4.1rem;
+}
+
+
+.main .formActualizar .divFormPrin .divCategoria svg{
+    width: 6rem;
+    height: max-content;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+}
+
+
+.main .formActualizar .divFormPrin textarea{
+    font-size: 1.6rem;
+    width: 100%;
+    resize: none;
+    padding: 1.3rem 1.5rem 1rem 1.5rem;
+    color: #ffffdd;
+    background-color: #0a0505;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    border-bottom: 2px solid #dfbe2d;
+    margin: 0rem 0rem 1rem 4.1rem;    
+}
+
+
+.main .formActualizar .divFormPrin textarea::placeholder{
+    color: #8f8153;
+}
+
+
+.main .formActualizar .divFormPrin select{
+    font-size: 1.6rem;
+    padding: 1rem;
+    outline: none;   
+}
+
+
+.main .formActualizar .divFormPrin select option{
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: none;
+}
+
+
+.main .containPrinCrear .formActualizar .imgContainerPrin{
+    width: 45%;
+    border: 1px solid #dfbe2d;
+    border-radius: 2rem;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    justify-content: center;
+}
+
+
+.main .formActualizar .imgContainerPrin .btnCrearContain{
+    width: 100%;
+}
+
+
+.main .formActualizar .imgContainerPrin .inputImgPrinci{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    margin-left: -16rem;
+    color: #cfb84e; 
+}
+
+
+.main .inputImgPrinci::-webkit-file-upload-button{
+    cursor: pointer;
+    -webkit-appearance: none;
+    font-size: 1.4rem;
+    background-color: #0a0505;
+    color: #cfb84e;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    transition: .4s;
+}
+
+
+.main .inputImgPrinci:hover .inputImgPrinci::-webkit-file-upload-button{
+    background-color: #7a691d;
+}
+
+
+.main .formActualizar .imgContainerPrin .imgPrincipalSpan{
+    width: 100%;
+    margin: 1rem 0;
+    height: max-content;
+    display: flex;
+    padding-left: 6.5rem;
+    font-size: 1.5rem;
+    font-family: 'Inter Bold', sans-serif;
+    color: #8f8153;
+}
+
+
+.main .formActualizar .imgContainerPrin #newSecondImgBtn{
+    width: 100%;
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    color: #cfb84e;
+}
+
+
+.main .formActualizar .imgContainerPrin #newSecondImgBtn::-webkit-file-upload-button{
+    -webkit-appearance: none;
+    color: #dfbe2d;
+    background-color: #0a0505;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1.3rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+.main .formActualizar .imgContainerPrin #newSecondImgBtn:hover::-webkit-file-upload-button{
+    -webkit-appearance: none;
+    color: #dfbe2d;
+    background-color: #333212;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1.3rem;
+}
+
+
+.main .formActualizar .imgContainerPrin .imgSecundariasSpan{
+    width: 100%;
+    margin: 3rem 0 0 0;
+    padding-top: 2rem;
+    height: max-content;
+    display: flex;
+    font-family: 'Inter Bold', sans-serif;
+    padding-left: 3.5rem;
+    border-top: 1px dashed #dfbe2d;
+    font-size: 1.5rem;
+    color: #8f8153;
+}
+
+
+.main .formActualizar .imgContainerPrin .contenImgSecun{
+    width: 90%;
+    margin: 2rem 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+
+.main .imgContainerPrin .contenImgSecun img{
+    flex-grow: 1;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 1rem;
+    overflow: hidden; 
+}
+
+
+.main .imgContainerPrin .contenImgSecun img:not([id="img1"]){
+    margin-left: 1rem;
+}
+
+
+.main .formActualizar .imgContainerPrin .contenImgSecun::-webkit-scrollbar{
+    -webkit-appearance: none;
+    height: .6rem;
+}
+
+
+.main .formActualizar .imgContainerPrin .contenImgSecun::-webkit-scrollbar-thumb{
+    background-color: #ffffdd;
+    border-radius: .6rem;
+}
+
+
+.main .formActualizar .imgContainerPrin .contenImgPrinci{
+    max-width: 48rem;
+    height: max-content;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+
+.main .containPrinCrear .formActualizar .btnCrearContain{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6rem;
+    border-top: 1.5px dashed #dfbe2d;
+    border-bottom: 1.5px dashed #dfbe2d;
+    height: max-content;   
+}
+
+
+.main .containPrinCrear .formActualizar .btnCrearContain #btnSubir{
+    padding: 1rem 2rem;
+    background-color: #3d9b21;
+    color: #fff8db;
+    font-size: 2rem;
+    font-family: 'Inter Bold', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin: 2rem 5rem 2rem 0;
+    cursor: pointer;  
+}
+
+
+.main .containPrinCrear .formActualizar .btnCrearContain #btnSubir:hover{
+    background-color: #87c973;
+}
+
+
+.divIVA{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 4rem;
+    
+}
+
+
+.divIVA span{
+    font-size: 1.7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #bba354;
+}
+
+
+.divIVA .IVA{
+    margin-bottom: 1rem;
+}
+
+
+.divIVA input{
+    width: 50%;
+    border-radius: 1rem;
+}
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0 !important;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d36114;
+}
+
+
+.footer .copy{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ffffdd;
+    font-family: 'Stellar', sans-serif;
+    font-weight: 500;
+}
+

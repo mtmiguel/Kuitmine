@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="display:flex; flex-wrap:wrap; width:100vw; height: max-content; border-bottom: 1px solid #999999; margin:0; padding: 0 0 1.5rem 0; box-sizing: border-box;">
+        
+        <div style="display:flex; justify-content:left; position: relative; width:100%; height: max-content;">
+            <div style="display:flex; flex-wrap:wrap; height: max-content; flex-grow:1">
+                <span style="color: #d36114bb; font-size: 3rem; font-family: 'Stellar', sans-serif; font-weight: 700; margin: 2rem 0 1rem 3rem; width:100%">
+                Factura de Compra
+                </span>
+                <span style="width:100%; margin:0 0 .5rem 3rem; font-size: 1.1rem; font-family: 'Stellar', sans-serif">Kuitmine Inc.</span>
+                <span style="margin:0 0 2rem 3rem; font-size: 1.1rem; font-family: 'Stellar', sans-serif">Cúcuta, Norte de Santander</span>
+            </div>
+            <img src="img\logoPequeño.png" alt="Logo" style="width:6rem; height: max-content; position: absolute;
+            right: 3rem; top: 100%; transform: translateY(-100%)">
+        </div>
+        <div style="display:flex; flex-wrap:wrap; justify-content:left; position: relative; width:100%; height: max-content; padding: 1rem 3rem;">
+            <div style="display:flex; flex-direction: column; margin: 0 2rem 0 0; flex-wrap:wrap; max-width: 50%">
+                <span style="font-size: 1.2rem; font-family: 'Stellar', sans-serif; font-weight: 700; color: #777777;">Facturar A:</span>
+                <span style="font-size: 1.05rem; font-family: 'Stellar', sans-serif; margin: .5rem 0;">{{Usuario}}</span>
+            </div>
+            <div style="display:flex; flex-grow:1; flex-direction: column;">
+                <span style="font-size: 1.2rem; font-family: 'Stellar', sans-serif; font-weight: 700; width: 100%; color: #777777">Dirección Envio: </span>
+                <span style="font-size: 1.05rem; font-family: 'Stellar', sans-serif; margin: .5rem 0;">{{direcciEnvi}}</span>
+            </div>
+            <div style="display:flex; flex-wrap: wrap; width: 100%; margin: 2rem 0 0 0; border-bottom: 2px dashed #d36114bb; padding: 0 0 2rem 0;">
+                <span style="font-size: 1.2rem; font-family: 'Stellar', sans-serif; font-weight: 700; color: #777777;">Fecha: </span>
+                <span style="font-size: 1.05rem; font-family: 'Stellar', sans-serif; margin: 0 2rem 0 1rem;">{{Fecha}}</span>
+                <span style="font-size: 1.2rem; font-family: 'Stellar', sans-serif; font-weight: 700; color: #777777;">Fecha de Vencimiento: </span>
+                <span style="font-size: 1.05rem; font-family: 'Stellar', sans-serif; margin: 0 2rem 0 1rem;">{{FechaVenci}}</span>
+            </div>
+        </div>
+        <div style="padding: 0 3rem 2rem 3rem; display:flex; width: 100%;">
+            <table style="width:100%">
+                <tr>
+                    <td style="border: 1px dashed black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">Cantidad</td>
+                    <td style="border: 1px dashed black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">Precio x Unidad</td>
+                    <td style="border: 1px dashed black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">IVA</td>
+                    <td style="border: 1px dashed black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">Descuento</td>
+                    <td style="border: 1px dashed black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">Importe</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">{{Cantidad}}</td>
+                    <td style="border:1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">{{Precio}}</td>
+                    <td style="border:1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">{{IVA}}</td>
+                    <td style="border:1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">{{Descuento}}</td>
+                    <td style="border:1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">{{Importe}}</td>
+                </tr>
+                <td style="opacity:0"></td>
+                    <td style="opacity:0"></td>
+                    <td style="opacity:0"></td>
+                    <td style="border: 1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">Subtotal</td>
+                    <td style="border: 1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700;">{{Subtotal}}</td>
+                </tr>
+                <td style="opacity:0"></td>
+                    <td style="opacity:0"></td>
+                    <td style="opacity:0"></td>
+                    <td style="border: 1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700; font-size: 1.6rem">Total</td>
+                    <td style="border: 1px solid black; font-family: 'Stellar', sans-serif; padding: .7rem; font-weight: 700; font-size: 1.6rem;">{{Total}}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

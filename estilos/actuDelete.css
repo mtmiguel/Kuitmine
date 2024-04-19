@@ -1,0 +1,1373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+    text-decoration: none; list-style: none;
+    outline: none; border: none;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+html{
+    background-color: #050302;
+    color: #ffffdd;
+}
+
+.Header{
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #050302;
+    z-index: 1000;
+}
+
+
+.Header .headerdiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+
+.Header div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;     
+}
+
+
+.Header div .img-logo-containt{
+    width: 100%;
+    display: flex;
+    height: 60%;
+    align-items: center;
+    position: relative;
+}
+
+
+.Header .btnTemaContainer{
+    width: 100%;
+    background-color: #0a0505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18%;
+}
+
+
+.Header .btnTemaContainer div{
+    margin: 1rem 0;
+    width: 3rem;
+    height: max-content;
+    overflow: hidden;
+    margin-left: 1.4rem;
+    cursor: pointer;  
+}
+
+
+.Header .logo-contain{
+    width: 9rem;
+    height: max-content;
+    margin-top: 2rem;
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+.Header .imgPath{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    z-index: 100;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 45%;
+    z-index: 50;
+    filter: brightness(60%); 
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2 img{
+    transform: scaleX(-1);
+}
+
+
+.Header .imgPath3{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 58%;
+    filter: brightness(20%);
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .Header_Nav{
+    background-color: #0a0505;
+    border-top: 2px solid #dfbe2d;
+    border-bottom: 4px solid #7a691d;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 22%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+
+.Header .Header_Nav .Header_Nav-UL{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint{
+    width: 66%;
+    height: 100%;   
+}
+
+
+.Header_Nav-UL .nav-lisContaint li{
+    display: flex;
+    align-items: center;  
+}
+
+
+.Header_Nav-UL .nav-lisContaint li:nth-child(1) .enlace{
+    padding-left: 3rem !important; 
+    padding-right: 3rem !important;
+}
+
+
+.Header_Nav-UL .nav-lisContaint li .enlace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #dfbe2d;
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+    cursor: pointer;   
+}
+
+
+.Header_Nav-UL .nav-lisContaint li .enlace:hover{
+    background-color: #dfbe2d;
+    color: #0a0505;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 34%;   
+}
+
+
+.Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #dfbe2d;
+    transition: .4s;  
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace span{
+    color: #0a0505;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace:hover{
+    background-color: #7a691d; 
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace:hover span{
+    color: #dfbe2d;
+}
+
+
+.Header_Nav-UL .iniRegiContain .user-enlace:hover .icon-user{
+    fill:#dfbe2d
+}
+
+
+.Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #dfbe2d;
+    transition: .4s;   
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace span{
+    color: #0a0505;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace:hover{
+    background-color: #7a691d;
+    
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace:hover span{
+    color: #dfbe2d;
+}
+
+
+.Header_Nav-UL .iniRegiContain .salir-enlace:hover .icon-salir{
+    fill:#dfbe2d
+}
+
+
+.Header_Nav .Header_Nav-UL .iniRegiContain .icon-salir{
+    width: 10%;
+    height: max-content;
+    fill: #0a0505;
+    transition: .4s;
+}
+
+
+.Header_Nav .Header_Nav-UL .iniRegiContain .icon-user{
+    width: 10%;
+    height: max-content;
+    fill: #0a0505;
+    transition: .4s;
+}
+
+
+.body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 18rem;
+    padding-right: 0; 
+}
+
+
+.body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 1rem;
+}
+
+
+.body::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: #ffffdd;
+}
+
+
+.body .btnContainer0{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+.body .btnContainer0 .btn-container{
+    background-image: linear-gradient(to right, #7a691d, #3a1e06);
+    padding: 1rem 4rem;
+    height: 8rem;
+    display: flex;
+    position: sticky;
+    z-index: 600;
+    top: 0;
+    margin-top: 39rem;
+    right: 0rem;
+    width: 58%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.btnContainer0 .btn-container .btnAcciones{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.btnContainer0 .btn-container .agreeIcon1{
+    display: none;
+}
+
+
+.btnContainer0 .btn-container .cancelIcon1{
+    display: none;
+}
+
+
+.btnContainer0 .btn-container .agreeIcon2{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    background-color: #18a023;
+    border-radius: 1rem;
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.btnContainer0 .btn-container .agreeIcon2:hover{
+    background-color: #44c533;
+}
+
+
+.btnContainer0 .btn-container .agreeIcon2 .Icon{
+    width: 2rem;
+    height: max-content;
+    fill: #ffffdd;
+}
+
+
+.btnContainer0 .btn-container .cancelIcon2{
+    padding: 1rem;
+    display: flex;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #a01818;
+    border-radius: 1rem;
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.btnContainer0 .btn-container .cancelIcon2:hover{
+    background-color: #c53333;
+}
+
+
+.btnContainer0 .btn-container .cancelIcon2 .Icon{
+    width: 2rem;
+    height: max-content;
+    fill: #ffffdd;
+}
+
+
+.btnContainer0 .btn-container #btnEliminar{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #dd3333;
+    color: #ffffdd;
+    font-family: 'Poppins Regular', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
+    width: 25rem;
+    transition: .4s;
+    margin-left: 1rem;  
+}
+
+
+.btnContainer0 .btn-container #btnEliminar:hover{
+    background-color: #f14c4c;
+}
+
+
+.btnContainer0 .btn-container #btnEliminar .deleteIcon{
+    width: 2rem;
+    height: max-content;
+    fill: #ffffdd;
+    margin-right: 1rem;  
+}
+
+
+.btnContainer0 .btn-container .btnActualizar1{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #2755aa;
+    color: #ffffdd;
+    font-family: 'Poppins Regular', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
+    width: 25rem;
+    transition: .4s; 
+}
+
+
+.btnContainer0 .btn-container .btnActualizar1:hover{
+    background-color: #4c99f1;
+}
+
+
+.btnContainer0 .btn-container .btnActualizar1 .actuIcon{
+    width: 2rem;
+    height: max-content;
+    fill: #ffffdd;
+    margin-right: 1rem; 
+}
+
+
+.btnContainer0 .btn-container .btnActualizar2{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #516488;
+    color: #ffffdd;
+    font-family: 'Poppins Regular', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
+    width: 25rem;
+    transition: .4s;
+}
+
+
+.btnContainer0 .btn-container .btnActualizar2 .actuIcon{
+    width: 2rem;
+    height: max-content;
+    fill: #ffffdd;
+    margin-right: 1rem;   
+}
+
+
+.body .main{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.body .main .main--div-imgAndDetailContain{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-start;
+}
+
+
+.main .main--div-imgAndDetailContain .div-imgContain{
+    width: 42%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 800;
+}
+
+
+.main--div-imgAndDetailContain .div-imgContain .div-imgPrinContain{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.main--div-imgAndDetailContain .div-imgContain .div-imgSecunContain{
+    position: relative;
+    width: 90%;
+    height: max-content;
+    overflow-x: scroll;
+    column-gap: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    margin: 0rem 4rem 2rem 4rem;
+    padding: 1rem 0;
+}
+
+
+.main--div-imgAndDetailContain .div-imgContain .div-imgSecunContain div{
+    width: 20px;
+    height: 100%;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+
+.main--div-imgAndDetailContain .div-imgContain .div-imgSecunContain::-webkit-scrollbar{
+    -webkit-appearance: none;
+    height: .8rem;
+}
+
+
+.main--div-imgAndDetailContain .div-imgContain .div-imgSecunContain::-webkit-scrollbar-thumb{
+    background-color: #ffffdd;
+    border-radius: .8rem;
+}
+
+
+.main--div-imgAndDetailContain .div-imgContain .div-imgSecunContain .div-imgSecun{
+    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 15rem;
+    background-color: #0a0505;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+
+.main .main--div-imgAndDetailContain .productInfoContain{
+    width: 58%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 4rem;
+    min-height: 100%;
+    flex-direction: column;
+    position: relative;
+    z-index: 400;
+    border-left: 2px solid #7a691d;
+    padding-bottom: 4rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .dolar{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #2ed32e;
+    width: max-content;
+    position: absolute;
+    height: max-content;
+    left: 2rem;
+    top: 4.3rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoA3{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 4rem;
+    top: 35.8rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoC3{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 4rem;
+    top: 35.8rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoA23{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoC23{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoA4{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 4rem;
+    top: 47.75rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoC4{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 4rem;
+    top: 47.75rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoA24{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoC24{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoA5{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 4rem;
+    top: 69.1rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoC5{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 4rem;
+    top: 69.1rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoA25{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .candadoC25{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizar{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizar2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    background-color: #dd3333; 
+}
+
+
+.productInfoContain .mensajeErrorActualizar2 span{
+    font-size: 2rem;
+    color: #ffcccc;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizarDC{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizarDC2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    z-index: 10;
+    background-color: #dd3333;
+}
+
+
+.productInfoContain .mensajeErrorActualizarDC2 span{
+    font-size: 2rem;
+    color: #ffcccc;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizarDL{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizarDL2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    z-index: 10;
+    background-color: #dd3333;  
+}
+
+
+.productInfoContain .mensajeErrorActualizarDL2 span{
+    font-size: 2rem;
+    color: #ffcccc;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizarPre{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .mensajeErrorActualizarPre2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    z-index: 10;
+    background-color: #dd3333;
+}
+
+
+.productInfoContain .mensajeErrorActualizarPre2 span{
+    font-size: 2rem;
+    color: #ffcccc;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div1Nombre{
+    width: 100%;
+    padding-right: 10%;
+    height: 9rem;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #dfbe2d; 
+}
+
+
+.productInfoContain .div1Nombre .nombreSpan{
+    width: 100%;
+    color: #dfbe2d66;
+    font-size: 1.8rem;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.productInfoContain .div1Nombre #nombrePdtInput{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    background-color: #050302;
+    margin-left: 2rem;
+}
+
+
+.productInfoContain .div1Nombre .candadoA{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div1Nombre .candadoC{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div1Nombre .candadoA2{
+    display: none;
+}
+
+
+.productInfoContain .div1Nombre .candadoC2{
+    display: none;
+} 
+
+
+.main--div-imgAndDetailContain .productInfoContain .div2Precio{
+    width: 100%;
+    padding-right: 10%;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 12rem;
+    position: relative;
+    border-top: 1px solid #7a691d;
+    
+}
+
+
+.productInfoContain .div2Precio .precioSpan{
+    width: 100%;
+    color: #65df2d66;
+    font-size: 1.8rem;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.productInfoContain .div2Precio #precioPdtInput{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #2ed32e;
+    background-color: #050302;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+
+
+.productInfoContain .div2Precio .candadoA{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div2Precio .candadoC{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div2Precio .candadoA2{
+    display: none;
+}
+
+
+.productInfoContain .div2Precio .candadoC2{
+    display: none;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div3Otros{
+    width: 100%;
+    height: 10rem;
+    padding-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid #7a691d;
+    border-top: 1px solid #7a691d; 
+}
+
+
+.productInfoContain .div3Otros div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;                   
+}
+
+
+.productInfoContain .div3Otros div span{
+    width: 100%;
+    color: #dfbe2d66;
+    font-size: 1.8rem;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+.productInfoContain .div3Otros div input{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    background-color: #050302;
+}  
+
+
+.productInfoContain .div3Otros div:not([class="divIVA"]){
+    border-left: 1px solid #7a691d;
+} 
+
+
+.productInfoContain .div3Otros .divStock{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    border-left: 1px solid #7a691d;
+    padding-left: 2rem;   
+}
+
+
+.productInfoContain .div3Otros .divStock span{
+    width: 100%;
+    color: #dfbe2d66;
+    font-size: 1.8rem;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+.productInfoContain .div3Otros .divStock input{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    background-color: #050302;
+} 
+
+
+.productInfoContain .div3Otros .divIVA{
+    position: relative;
+}
+
+
+.productInfoContain .div3Otros .divIVA .candadoA{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divIVA .candadoC{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divIVA .candadoA2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros .divIVA .candadoC2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros .divDescu{
+    position: relative;    
+}
+
+
+.productInfoContain .div3Otros .divDescu .candadoA{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divDescu .candadoC{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divDescu .candadoA2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros .divDescu .candadoC2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros .divCatego{
+    position: relative;
+    width: 30%;
+    
+} 
+
+
+.productInfoContain .div3Otros .divCatego .candadoA{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divCatego .candadoC{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 2rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divCatego .candadoA2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros .divCatego .candadoC2{
+    display: none;
+}  
+
+
+.productInfoContain .div3Otros .divStock{
+    position: relative;  
+}
+
+
+.productInfoContain .div3Otros .divStock .candadoA{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #dfbe2d;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divStock .candadoC{
+    width: 1.8rem;
+    height: max-content;
+    position: absolute;
+    fill: #7a691d;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+.productInfoContain .div3Otros .divStock .candadoA2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros .divStock .candadoC2{
+    display: none;
+}
+
+
+.productInfoContain .div3Otros #categoPdtInput{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    padding: .5rem 0;
+    background-color: #050302;
+    width: 100%;  
+}
+
+
+.productInfoContain .div3Otros #categoPdtInput option{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    padding: .5rem 0;
+    background-color: #050302;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div4Descripcion{
+    width: 90%;
+    height: 24rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div4Descripcion .descriCorta{
+    width: 100%;
+    color: #dfbe2d66;
+    font-size: 1.8rem;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div4Descripcion #descripPdtInput{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    background-color: #050302;
+    margin-left: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    border-bottom: 1px solid #dfbe2d55;
+    resize: none;
+    width: 90%;
+} 
+
+
+.main--div-imgAndDetailContain .productInfoContain .div4Descripcion .contaCarac{
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #41370f;
+    top: 17.5rem;
+    left: 90%;
+    transform: translateX(-95%);
+    text-align: right;
+    background-color: #050302;
+    border: 1px solid #41370f;
+    border-radius: 1rem;
+    padding: 0 1rem; 
+}  
+
+
+.productInfoContain .div4Descripcion .contaCarac .conca255{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #41370f;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div4Descripcion .contaCarac2{
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #ce1515;
+    top: 17.5rem;
+    left: 90%;
+    transform: translateX(-95%);
+    text-align: right;
+    background-color: #050302;
+    border: 1px solid #ce1515;
+    border-radius: 1rem;
+    padding: 0 1rem;  
+}
+
+
+.productInfoContain .div4Descripcion .contaCarac2 .conca2552{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #ce1515;
+}
+
+
+.main--div-imgAndDetailContain .productInfoContain .div5Descripcion2{
+    width: 90%;
+    height: 28rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.productInfoContain .div5Descripcion2 .descriLarga{
+    width: 100%;
+    color: #dfbe2d66;
+    font-size: 1.8rem;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+.productInfoContain .div5Descripcion2 #descrip2PdtInput{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffdd;
+    background-color: #050302;
+    margin-left: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    border-bottom: 1px solid #dfbe2d55;
+    resize: none;
+    width: 90%;
+}
+
+
+.productInfoContain .div5Descripcion2 .contaCLargo{
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #41370f;
+    top: 24rem;
+    left: 90%;
+    transform: translateX(-95%);
+    text-align: right;
+    background-color: #050302;
+    border: 1px solid #41370f;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+
+.productInfoContain .div5Descripcion2 .contaCLargo2{
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #ce1515;
+    top: 24rem;
+    left: 90%;
+    transform: translateX(-95%);
+    text-align: right;
+    background-color: #050302;
+    border: 1px solid #ce1515;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+
+.productInfoContain .div5Descripcion2 .contSL{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #41370f;
+}
+
+
+.productInfoContain .div5Descripcion2 .contSL2{
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    color: #ce1515;
+}
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0 !important;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d36114; 
+}
+
+
+.footer .copy{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ffffdd;
+    font-family: 'Stellar', sans-serif;
+    font-weight: 500;
+}
+
+

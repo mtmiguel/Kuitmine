@@ -1,0 +1,940 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+    text-decoration: none; list-style: none;
+    outline: none; border: none;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+:root[typeu="neutral"]{
+    --displayDivModoUser: none;
+}
+
+
+:root[typeu="#ad64"]{
+    --displayDivModoUser: flex;
+}
+
+
+:root[typeu="#ld45"]{
+    --displayDivModoUser: none;
+}
+
+
+.body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-right: 0;
+    overflow-x: hidden;
+    padding-bottom: 20rem;
+}
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d36114bb; 
+}
+
+
+.footer .copy{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ffffdd;
+    font-family: 'Stellar', sans-serif;
+    font-weight: 500;
+}
+
+
+.body .main{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15rem;
+    padding-right: 0;
+}
+
+
+.main .divSpanPrin{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 0;
+    background-color: #ffa20030;
+}
+
+
+.main .spanPrin2{
+    width: 100%;
+    font-size: 3.8rem;
+    text-align: center;
+    color: #682a1b;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.main .pPrin{
+    font-size: 2.8rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    color: #682a1b;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.main .divImgs1{
+    width: 100%;
+    display: flex;
+    height: 46rem;
+    position: relative;
+    background-image: url("../img/indexImageMuestra2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -10rem;
+}
+
+
+.main .divImgs1 .degNegro{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.945) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+}
+
+
+.main .divImgs1 .empreCont{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    position: absolute;
+    z-index: 200;
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 800;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Poppins Regular', sans-serif;
+    animation: colorTitulo 18s infinite ease-in-out;
+}
+
+
+.main .divImgs1 .herraSpan{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    position: absolute;
+    z-index: 200;
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 800;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Poppins Regular', sans-serif;
+    opacity: 0;
+    animation: colorTitulo2 18s infinite ease-in-out;
+}
+
+
+.main .divImgs1 .seguSpan{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    position: absolute;
+    z-index: 200;
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 800;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Poppins Regular', sans-serif;
+    opacity: 0;
+    animation: colorTitulo3 18s infinite ease-in-out;
+}
+
+
+.main .divImgs1 .calidadSpan{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    position: absolute;
+    z-index: 200;
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 800;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Poppins Regular', sans-serif;
+    opacity: 0;
+    animation: colorTitulo4 18s infinite ease-in-out;
+}
+
+
+.main .masNuevoSection{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255,220,122,0) 0%, rgba(255,161,0,0.5) 100%);
+    overflow: hidden;
+}
+
+
+.main .masNuevoSection a{
+    width: 25rem;
+    height: 8rem;
+    top: 81%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    filter: blur(15px);
+    opacity: 0;
+    border-radius: 1rem;
+    background-color: #409718;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    transition: .1s;
+    cursor: pointer;
+}
+
+
+.main .masNuevoSection a:hover{
+    background-color: #70e739;
+}
+
+
+.main .masNuevoSection .spanNuevo{
+    width: 100%;
+    height: max-content;
+    font-size: 4rem;
+    opacity: 0;
+    filter: blur(15px);
+    color: #682a1bdd;
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    transform: translateX(-60%);
+    transition: .1s;
+    text-align: center;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+}
+
+
+.main .masNuevoSection .divImg{
+    width: 100%;
+    height: 50rem;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+    padding-bottom: 15rem;
+    background: linear-gradient(0deg, rgba(161, 47, 18, 0.505) 0%, rgba(206, 111, 34, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+.main .masNuevoSection .divImg button{
+    width: 38rem;
+    height: 38rem;
+    opacity: 0;
+    filter: blur(15px);
+    background-color: #682a1b44;
+    transform: translateX(-200%);
+    transition: .1s;
+    transition-delay: calc(.2s * var(--i));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: .7rem .7rem 1rem #4b1c1199;
+}
+
+
+.main .masNuevoSection .divImg button img{
+    height: 80%;
+}
+
+
+.main .masNuevoSection .divImg button span{
+    width: 100%;
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-weight: 10%;
+    color: #ffffdd;
+    height: 10%;
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.main .masNuevoSection.mostrarAnimacion .spanNuevo{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+.main .masNuevoSection.mostrarAnimacion .divImg button{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+.main .masNuevoSection.mostrarAnimacion a{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(-50%);
+}
+
+
+.main .sectionInfo1{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+
+.main .sectionInfo1 p{
+    width: 70%;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 5rem;
+    border-top: 1px solid #682a1b44;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #291209dd;  
+}
+
+
+.main .sectionInfo1 p span{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #d36114bb;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.main .sectionInfo1 div{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+.main .sectionInfo1 div svg{
+    width: 10rem;
+    height: max-content;
+    fill: #d36114bb;
+}
+
+
+.main .sectionRegis{
+    width: 100%;
+    box-shadow: 0rem 0rem 2rem #aaaaaadd;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0;
+    position: relative;
+    background-image: url("../img/imgUnion4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20rem;
+    margin-top: 8rem;
+    transition: .1s;
+}
+
+
+.main .sectionRegis .blanco{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(255,161,0,.45) 30%, rgba(255,109,0,.45) 100%);
+    z-index: 5;
+}
+
+
+.main .sectionRegis .divImg1{
+    width: 38rem;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+    position: absolute;
+    opacity: 0;
+    border: 5px solid #fff7f0;
+    transition-delay: calc(.2s * var(--e));
+    top: 4.5rem;
+    transform: translateX(-100%);
+    left: 40rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 400;
+    box-shadow: 1rem 1rem 1rem #643e29;
+    filter: blur(15px);
+}
+
+
+.main .sectionRegis .divImg2{
+    width: 34rem;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: .1s;
+    transition-delay: calc(.2s * var(--e));
+    left: 24rem;
+    opacity: 0;
+    border: 3px solid #fff7f0;
+    border-radius: 1rem;
+    z-index: 200;
+    top: 20rem;
+    transform: translateX(-100%);
+    overflow: hidden;
+    box-shadow: 1rem 1rem 1rem #643e29;
+    filter: blur(15px);
+}
+
+
+.main .sectionRegis .divImg3{
+    width: 30rem;
+    height: max-content;
+    display: flex;
+    top: 3rem;
+    left: 10rem;
+    transition: .1s;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    transition-delay: calc(.2s * var(--e));
+    opacity: 0;
+    top: 35rem;
+    transform: translateX(-100%);
+    border: 2px solid #fff7f0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 1rem #643e29;
+    filter: blur(15px);
+}
+
+
+.main .sectionRegis span{
+    width: 40%;
+    font-size: 4rem;
+    font-family: 'Poppins Regular', sans-serif;
+    position: absolute;
+    color: #ffffff;
+    right: 5rem;
+    font-weight: 700;
+    top: 23rem;
+    z-index: 100;
+    transition: .1s;
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(15px);
+}
+
+
+.main .sectionRegis button{
+    width: 20%;
+    height: 6rem;
+    border: none;
+    font-size: 3rem;
+    box-shadow: .8rem .8rem .5rem #643e29;
+    position: absolute;
+    transition: .1s;
+    z-index: 100;
+    border-radius: 1rem;
+    background-color: #7a7af0;
+    transform: translateX(100%);
+    filter: blur(15px);
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    right: 25rem;
+    opacity: 0;
+    top: 35rem;
+    cursor: pointer;
+}
+
+
+.main .sectionRegis button:hover{
+    background-color: #a9a9ff;
+}
+
+
+.main .sectionRegis button a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.main .sectionRegis.mostrarAnimacion .divImg1{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+
+.main .sectionRegis.mostrarAnimacion .divImg2{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+
+.main .sectionRegis.mostrarAnimacion .divImg3{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+
+.main .sectionRegis.mostrarAnimacion span{
+    opacity: 1;
+    transform: translateX(0%);
+    filter: blur(0);
+}
+
+
+.main .sectionRegis.mostrarAnimacion button{
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+}
+
+
+.main .sectionContacto{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    background-image: url("../img/imgFondoProducts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position-y: -30rem;
+}
+
+
+.main .sectionContacto .negro{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000066;
+}
+
+
+.main .sectionContacto span{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+
+.main .sectionContacto a{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    background-color: #409718;
+    padding: 1rem 2rem;
+    z-index: 100;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 3rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+.main .sectionContacto a:hover{
+    background-color: #70e739;
+}
+
+
+.body::-webkit-scrollbar{
+
+    -webkit-appearance: none;
+    width: 1rem;
+
+}
+
+
+.body::-webkit-scrollbar-thumb{
+
+    background-color: #9e9e9e;
+    border-radius: .8rem;
+
+}
+
+
+.Header{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.logoKuitmine{
+    width: 8rem;
+    height: max-content;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+
+.Header_Nav{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.Header_Nav .Header_Nav-UL{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2.5rem 0 0;
+}
+
+
+.Header_Nav-UL .nav-lisContaint{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    list-style: none; 
+}
+
+
+.nav-lisContaint .enlace{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Poppins Regular', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.nav-lisContaint .enlace:hover{
+    color: #ffe5c8;
+}
+
+
+.nav-lisContaint .liInicio{
+    margin-right: 2.4rem;
+}
+
+
+.nav-lisContaint .lihistorial{
+    margin-right: 2.4rem;
+    cursor: pointer;
+}
+
+
+.nav-lisContaint .lilisdeseos{
+    margin-right: 2.4rem;
+    cursor: pointer;
+}
+
+
+.Header_Nav-UL .iniRegiContain{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.iniRegiContain .user-enlace{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 3rem;
+    padding-left: 2rem;
+    border-left: 1px solid #ffffff88;
+}
+
+
+.user-enlace:hover span{
+    color: #ffe5c8;
+}
+
+
+.user-enlace:hover svg{
+    fill: #ffe5c8;
+}
+
+
+.user-enlace svg{
+    width: 4rem;
+    height: max-content;
+    margin-right: 1rem;
+    fill: #ffffff;
+}
+
+
+.user-enlace span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.iniRegiContain .salir-enlace{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.salir-enlace:hover svg{
+    fill: #ffe5c8;
+}
+
+
+.salir-enlace:hover span{
+    color: #ffe5c8;
+}
+
+
+.salir-enlace svg{
+    width: 4rem;
+    height: max-content;
+    margin-right: 1rem;
+    fill: #ffffff;
+}
+
+
+.salir-enlace span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+#img_fondoPrin{
+    background-position-y: -24rem;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -100;
+}
+
+
+.spanPrin{
+    width: 100%;
+    color: #ffffff;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Poppins Regular', sans-serif;
+    align-self: last baseline;
+    bottom: 4rem;
+    position: absolute;
+    animation: tituloPrin 1s ease-in-out;
+}
+
+
+.div-administrador{
+    display: var(--displayDivModoUser);
+    position: fixed;
+    cursor: default;
+    top: 0;
+    left: 0;
+    width: 22%;
+    z-index: 2800;
+    height: max-content;
+    background-color: #111122dd;
+    overflow: hidden;
+    border-radius: 0 0 1rem 0;
+}
+
+
+.div-administrador div{
+    display: flex;
+}
+
+
+.div-administrador div:nth-child(1){
+    position: relative;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.div-administrador div:nth-child(1) .administracionA{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2rem 1.8rem;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #dddddd;
+    cursor: pointer;
+    background-color: #ddddee22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.administracionA:hover{
+    color: #7a7af0;
+}
+
+
+.div-administrador div:nth-child(2){
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: .5rem;
+}
+
+
+.div-administrador div:nth-child(2) span{
+    text-align: left;
+    color: #999999;
+    font-size: 1.5rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+} 
+
+
+.div-administrador div:nth-child(2) div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: max-content;
+    padding: 0;
+    margin-top: .6rem;
+    
+    
+}
+
+
+.div-administrador div:nth-child(2) div .VistaPrevia{
+    width: max-content;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #999999;
+    padding: 0 0 0 .4rem;
+}
+
+
+.div-administrador div:nth-child(2) div svg{
+    width: 22%;
+    height: max-content;
+    fill:#999999;
+}
+
+

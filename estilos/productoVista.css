@@ -1,0 +1,2499 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+    text-decoration: none; list-style: none;
+    outline: none; border: none;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+:root[typeu="neutral"]{
+    --displayDivModoUser: none;
+}
+
+
+:root[typeu="#ad64"]{
+    --displayDivModoUser: flex;
+}
+
+
+:root[typeu="#ld45"]{
+    --displayDivModoUser: none;
+}
+
+
+.body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: 20rem;   
+}
+
+
+.body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 1rem;
+}
+
+
+.body::-webkit-scrollbar-thumb{
+    background-color: #9e9e9e;
+    border-radius: .8rem;
+}
+
+
+.body .div-administrador{
+    display: var(--displayDivModoUser);
+    position: fixed;
+    cursor: default;
+    top: 0;
+    left: 0;
+    width: 22%;
+    z-index: 1800;
+    height: max-content;
+    background-color: #111122dd;
+    overflow: hidden;
+    border-radius: 0 0 1rem 0;
+} 
+
+
+.body .div-administrador div{
+    display: flex;
+}
+
+
+.body .div-administrador div:nth-child(1){
+    position: relative;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.div-administrador div:nth-child(1) .administracionA{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2rem 1.8rem;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #dddddd;
+    cursor: pointer;
+    background-color: #ddddee22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;  
+}
+
+
+.div-administrador div:nth-child(1) .administracionA:hover{
+    color: #7a7af0;
+}
+
+
+.body .div-administrador div:nth-child(2){
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: .5rem;  
+}
+
+
+.div-administrador div:nth-child(2) span{
+    text-align: left;
+    color: #999999;
+    font-size: 1.5rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+} 
+
+
+.div-administrador div:nth-child(2) div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: max-content;
+    padding: 0;
+    margin-top: .6rem;  
+}
+
+
+.div-administrador div:nth-child(2) div .VistaPrevia{
+    width: max-content;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #999999;
+    padding: 0 0 0 .4rem;
+}
+
+
+.div-administrador div:nth-child(2) div svg{
+    width: 22%;
+    height: max-content;
+    fill:#999999;
+}
+
+
+.Header{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #fcf4eb;
+}
+
+
+.Header .headerdiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.Header div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.Header div .img-logo-containt{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    position: relative;
+}
+
+
+.Header .btnTemaContainer{
+    width: 100%;
+    background-color: #c97f00cc;
+    display: inline-flex;
+    justify-content: center;
+    height: 5rem;
+}
+
+
+.Header .logo-contain{
+    width: 9rem;
+    height: max-content;
+    margin-top: 2rem;
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+.Header .imgPath{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    z-index: 100;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 45%;
+    z-index: 50;
+    height: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2 div{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    background-color: #fcf4eb;
+    filter: opacity(20%);
+}
+
+
+.Header .imgPath2 img{
+    transform: scaleX(-1);
+}
+
+
+.Header .imgPath3{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 58%;
+    height: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath3 div{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    background-color: #fcf4eb;
+    filter: opacity(60%);
+}
+
+
+.Header .Header_Nav{
+    background-color: #df681933;
+    border-top: 2px solid #b95716;
+    border-bottom: 5px solid #b95716;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 6rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Header .Header_Nav .divRelle{
+    height: 100%;
+    width: 9.2%;
+    left: 66%;
+    transform: translateX(-100%);
+    background-color: #b9571666;
+    position: absolute;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint{
+    width: 66%;
+    height: 100%; 
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li{
+    display: flex;
+    align-items: center;  
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li:nth-child(1) .enlace{
+    padding-left: 3rem !important; 
+    padding-right: 3rem !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+    background-color: #b95716;
+    color: #fcf4eb;
+    cursor: default;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li .enlace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #b95716;
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+    cursor: pointer; 
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li .enlace:hover{
+    background-color: #b95716;
+    color: #fcf4eb;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 34%;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #b95716;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace span{
+    color: #fcf4eb;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover{
+    background-color:  #f7d8c1;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover span{ 
+    color: #b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover .icon-user{
+    fill:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover .icon-entrar{
+    fill:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #b95716;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace span{
+    color:#fcf4eb;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace:hover{
+    background-color: #f7d8c1;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-salir{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace:hover svg{
+    fill:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace:hover span{
+    color:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-user{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-entrar{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-regis{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.entradaPreguntasPdt{
+    width: 100%;
+}
+
+
+.entradaPreguntasPdt #mErrorPregunta{
+    width: max-content;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: #ffd2d1;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #ff443e;
+}
+
+
+.entradaPreguntasPdt #spanCuentaCaracter{
+    width: max-content;
+    font-size: 2.4rem;
+    color: #684331;
+    margin-left: 2rem;
+    margin-top: 1.8rem; 
+}
+
+
+.entradaPreguntasPdt #spanCuentaCaracter span{
+    font-size: 2.4rem;
+    color: #684331; 
+}
+
+
+.entradaPreguntasPdt .flechaAbajoIcon{
+    transition: .4s;
+    position: absolute;
+    width: 3rem;
+    height: max-content;
+    right: 2rem;
+    fill: #684331;
+    cursor: pointer;
+    top: 2rem;
+}
+
+
+.entradaPreguntasPdt #preEspan{
+    width: 100%;
+    font-size: 2rem;
+    color: #684331;
+}
+
+
+.entradaPreguntasPdt textarea{
+    width: 100%;
+    margin-top: 1rem;
+    resize: none;
+    border: 1px solid #471e0baa;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: #684331;
+    outline: none;
+    font-size: 2rem;
+    padding: 1rem; 
+}
+
+
+.entradaPreguntasPdt textarea:focus{
+    box-shadow: 0 0 1rem #dfbc7c;
+    border: 1px solid #dfbc7c;
+}
+
+
+.entradaPreguntasPdt button{
+    width: 20rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #ac492b;
+    border-radius: 1rem;
+    border: none;
+    height: max-content;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff9ef;
+    margin-top: 1rem;  
+}
+
+
+.entradaPreguntasPdt button:hover{
+    background-color: #c78d4b;
+}
+
+
+.entradaPreguntasPdt .botonEnviar2{
+    width: 20rem;
+    padding: 1rem;
+    cursor: default;
+    background-color: #57443e;
+    border-radius: 1rem;
+    border: none;
+    height: max-content;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff9ef;
+    margin-top: 1rem;  
+}
+
+
+.entradaPreguntasPdt .botonEnviar2:hover{
+    background-color: #57443e;
+}
+
+
+#respuestaCdivNumber1{
+    padding-top: 3rem;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#respuestaCdivNumber1 .nombreR{
+    width: 100%;
+    font-size: 2rem;
+    color: #303030;
+    font-family: 'Poppins Regular', sans-serif; 
+    margin-bottom: 2rem;
+    position: relative;
+    margin-left: 4rem;
+}
+
+
+#respuestaCdivNumber1 .nombreR .barritaN{
+    width: 2rem;
+    height: 0;
+    border-bottom: 1px solid #303030;
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+
+#respuestaCdivNumber1 .nombreR .enRSpan{
+    font-size: 1.6rem;
+    color: #30303055;
+    font-family: 'Poppins Regular', sans-serif;  
+}
+
+
+#respuestaCdivNumber1 .nombreR .enRSpan span{
+    font-size: 1.6rem;
+    color: #30303099;
+    font-family: 'Poppins Regular', sans-serif; 
+}
+
+
+#respuestaCdivNumber1 .contenidoR{
+    width: 100%;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-bottom: 0;
+}
+
+
+#respuestaCdivNumber1 .divBTNRes{
+    width: 100%;
+    margin-top: 1.4rem;
+    display: flex;
+    margin-left: 4rem;
+    align-items: center;  
+}
+
+
+#respuestaCdivNumber1 .divBTNRes .btnResponder{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer; 
+}
+
+
+#respuestaCdivNumber1 .divBTNRes .btnResponder:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumber1 .divBTNRes .btnMres{
+    padding: .8rem 1rem;
+    margin-left: 1.4rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer; 
+}
+
+
+#respuestaCdivNumber1 .divBTNRes .btnMres:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumber1 .respuDiv{
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    row-gap: 3rem; 
+}
+
+
+#respuestaCdivNumber1 .respuDiv .respuestaCdivNumber1{
+    margin-top: 3rem !important;
+}
+
+
+#respuestaCdivNumber1 .divResponder{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+
+#respuestaCdivNumber1 .divResponder2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 1rem 0;
+    background-color: #f5f5f5;
+    padding-right: 4rem;  
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .spanResponderas{
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #30303055;
+    text-align: left;
+    margin-left: 4rem;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .textARespuesta{
+    width: 100%;
+    resize: none;
+    margin-left: 4rem;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR button{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer;  
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR button:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR button:nth-child(2){
+    margin-left: 1.4rem;
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR .btnEnviarRes{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #aaaaaa;
+    color: #525252;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: default;   
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR .btnEnviarRes:hover{
+    background-color: #aaaaaa;
+    color: #525252;
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR .btnEnviarRes2{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer;   
+}
+
+
+#respuestaCdivNumber1 .divResponder2 .contentBtnEyCR .btnEnviarRes2:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumberF{
+    padding-bottom: 3rem;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#respuestaCdivNumberF .nombreR{
+    width: 100%;
+    font-size: 2rem;
+    color: #303030;
+    font-family: 'Poppins Regular', sans-serif; 
+    margin-bottom: 2rem;
+    position: relative;
+    margin-left: 4rem;   
+}
+
+
+#respuestaCdivNumberF .nombreR .barritaN{
+    width: 2rem;
+    height: 0;
+    border-bottom: 1px solid #303030;
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+
+#respuestaCdivNumberF .nombreR .enRSpan{
+    font-size: 1.6rem;
+    color: #30303055;
+    font-family: 'Poppins Regular', sans-serif;   
+}
+
+
+#respuestaCdivNumberF .nombreR .enRSpan span{
+    font-size: 1.6rem;
+    color: #30303099;
+    font-family: 'Poppins Regular', sans-serif; 
+}
+
+
+#respuestaCdivNumberF .contenidoR{
+    width: 100%;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-bottom: 0;
+}
+
+
+#respuestaCdivNumberF .divBTNRes{
+    width: 100%;
+    margin-top: 1.4rem;
+    display: flex;
+    margin-left: 4rem;
+    align-items: center; 
+}
+
+
+#respuestaCdivNumberF .divBTNRes .btnResponder{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer;   
+}
+
+
+#respuestaCdivNumberF .divBTNRes .btnResponder:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumberF .divBTNRes .btnMres{
+    padding: .8rem 1rem;
+    margin-left: 1.4rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer;   
+}
+
+
+#respuestaCdivNumberF .divBTNRes .btnMres:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumberF .respuDiv{
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    row-gap: 3rem;   
+}
+
+
+#respuestaCdivNumberF .respuDiv .respuestaCdivNumber1{
+    margin-top: 3rem !important;
+}
+
+
+#respuestaCdivNumberF .divResponder{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+
+#respuestaCdivNumberF .divResponder2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 1rem 0;
+    background-color: #f5f5f5;
+    padding-right: 4rem;  
+}
+
+
+#respuestaCdivNumberF .divResponder2 .spanResponderas{
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #30303055;
+    text-align: left;
+    margin-left: 4rem;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+#respuestaCdivNumberF .divResponder2 .textARespuesta{
+    width: 100%;
+    resize: none;
+    margin-left: 4rem;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin-left: 4rem;
+    margin-bottom: 2rem; 
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR button{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR button:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR button:nth-child(2){
+    margin-left: 1.4rem;
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR .btnEnviarRes{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #aaaaaa;
+    color: #525252;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: default;  
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR .btnEnviarRes:hover{
+    background-color: #aaaaaa;
+    color: #525252;
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR .btnEnviarRes2{
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    color: #797979;
+    font-family: 'Poppins Regular', sans-serif;
+    border: 1px solid #303030;
+    transition: .4s;
+    cursor: pointer;  
+}
+
+
+#respuestaCdivNumberF .divResponder2 .contentBtnEyCR .btnEnviarRes2:hover{
+    background-color: #ffffff;
+    color: #303030;
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+    margin-top: 3rem; 
+    padding-bottom: 14rem;
+}
+
+
+.main .vista-productoContain{
+    width: 90%;
+    display: flex;
+    position: relative;
+    height: max-content;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem #00000077;  
+}
+
+
+.main .vista-productoContain .seccion1{
+    display: flex;
+    width: 65%;
+    height: max-content;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+.main .vista-productoContain .seccion1 .calificaContain{
+    width: 100%;
+    height: max-content;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 1rem 0 0 0;  
+}
+
+
+.main .vista-productoContain .seccion1 .calificaContain .reseñaSpan{
+    width: 100%;
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: 'Poppins Regular', sans-serif;
+    text-align: left;
+    padding-left: 4rem;
+    color: #303030;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.main .vista-productoContain .seccion1 .calificaContain .reseñaContaintPrin{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 2rem;
+    background-color: #ffe4c5;
+    padding: 2rem;
+    padding-right: 4rem;
+    border-radius: 1rem 0 0 0;
+    padding-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .productoSpan{
+    width: 100%;
+    height: max-content;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #303030;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1{
+    width: 45%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1 .calificacion{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #684331;  
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1 .calificacion span{
+    font-weight: 800;
+    color: #684331;
+    font-size: 4.8rem;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1 #estrellasA{
+    width: 100%;
+    height: max-content;
+    fill: #ffe4c5;
+    position: relative;
+    z-index: 100;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1 .estrellasGraficaA{
+    position: relative;
+    width: 50%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: #a34e2c;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1 .numeroRese{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #684331;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div1 .cantiCalificaciones{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #684331;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div2{
+    width: 55%;
+    height: max-content;
+    
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div2 .listaEstrellasDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;        
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div2 .listaEstrellasDiv div{
+    width: 100%;
+    margin-bottom: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    font-size: 1.6rem;
+    color: #684331;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div2 .listaEstrellasDiv div svg{
+    height: 100%;
+    width: max-content;
+    margin-right: .6rem;
+    fill: #684331;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div2 .listaEstrellasDiv div .barraLlena{
+    height: 100%;
+    width: 80%;
+    border-radius: 1rem;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    top: 0;
+    border: 1px solid #684331;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3{
+    border: 1px solid #f1c1a188;
+    width: 100%;
+    margin-top: 3rem;
+    height: 70rem;
+    display: flex;
+    border-radius: 1rem;
+    position: relative;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3 .divGeneIntRese{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 1rem; 
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #a57c67;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .flechaDivRese{
+    width: 3rem;
+    height: max-content;
+    fill: #532f1e;
+    position: absolute;
+    top: 2rem;
+    cursor: pointer;
+    right: 2rem;
+    transform: rotate(180deg);
+    transition: .4s;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .subeReseSpan{
+    width: 100%;
+    font-size: 2rem;
+    color: #532f1e;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-top: 2rem;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese textarea{
+    width: 95%;
+    margin-left: 2rem;
+    padding: 1.4rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese textarea:focus{
+    box-shadow: 0 0 1rem #fffbeeaa;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .contenedroStar{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 2rem 0 3rem 0;
+    padding-left: 2rem;
+    
+}
+
+
+.main .seccion1 .div3 .divIntRese .contenedroStar .star{
+    width: 4rem;
+    height: max-content;
+    margin-right: 1.2rem;
+    fill: #532f1eaa;
+    cursor: pointer;
+}
+
+
+.main .seccion1 .div3 .divGeneIntRese .divIntRese .contenedroStar .spanDarasXEstrellas{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-top: 1rem;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .contentButon{
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    padding-left: 2rem;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .contentButon .btnSubirReseña{
+    width: 16rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #d8a086;
+    font-size: 2.2rem;
+    color: #532f1e;
+    font-family: 'Poppins Regular', sans-serif;
+    padding: .5rem 1rem;
+    transition: .4s;
+    cursor: pointer; 
+}
+
+
+.main .seccion1 .divIntRese .contentButon .btnSubirReseña:hover{
+    background-color: #eebca5;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .contentButon .btnSubirReseña2{
+    width: 16rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #e9e9e9;
+    font-size: 2.2rem;
+    color: #888888;
+    font-family: 'Poppins Regular', sans-serif;
+    padding: .5rem 1rem;
+    transition: .4s;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .contentButon .contadorC{
+    height: max-content;
+    margin-top: .7rem;
+    width: max-content;
+    margin-left: 1.4rem;
+    font-size: 2rem;
+    color: #532f1e;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .divGeneIntRese .divIntRese .contentButon .contadorC2{
+    height: max-content;
+    width: max-content;
+    font-size: 2rem;
+    color: #532f1e;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: .8rem;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3::-webkit-scrollbar-thumb{
+    background-color: #fffcf8;
+    border-radius: .8rem;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3 .div31{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    row-gap: 3rem; 
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3 .div31 div{
+    width: 100%;
+    display: flex;
+    height: 18rem;
+    align-items: center;
+    background-color: #f1c1a188;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3 .div31 div div{
+    display: flex;
+}
+
+
+.main .seccion1 .calificaContain .reseñaContaintPrin .div3 .div31 div div:nth-child(1){
+    width: 70%;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 100%;
+    justify-content: center;  
+}
+
+
+.main .seccion1 .reseñaContaintPrin .div3 .div31 div div:nth-child(1) span{
+    font-size: 2.2rem;
+    color: #684331;
+    margin-left: 3rem;
+    width: 100%;
+    justify-items: center;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;  
+}
+
+
+.main .vista-productoContain .seccion1 .reseñaContaintPrin .div3 .div31 div div:nth-child(1) span:nth-child(2){
+    width: 100%;
+    font-size: 2rem;
+    margin-left: 3rem;
+    color: #422c2188;
+}
+
+
+.main .vista-productoContain .seccion1 .calificaContain .reseñaContaintPrin .div3 .div31 div .div2{
+    width: 30%;
+    display: flex;
+    row-gap: 1rem;
+    border: none;
+    border-radius: 0;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    height: 100%;
+    background-color: #ffffff22;
+    overflow: hidden;
+}
+
+
+.main .vista-productoContain .seccion1 .calificaContain .reseñaContaintPrin .div3 .div31 div .div2 .divEstrellaNum{
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff22;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    column-gap: .6rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.main .vista-productoContain .seccion1 .reseñaContaintPrin .div3 .div31 div .div2 .divEstrellaNum .estrella{
+    width: 5rem;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    fill: #684331;
+}
+
+
+.main .vista-productoContain .seccion1 .reseñaContaintPrin .div3 .div31 div .div2 .divEstrellaNum .numEstrellas{
+    font-size: 4.4rem;
+    color: #684331;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.main .vista-productoContain .seccion1 .reseñaContaintPrin .div31 div .div2 span:nth-child(1){
+    font-size: 1.4rem;
+    width: 60%;
+    color: #684331;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main .vista-productoContain .seccion1 .pdtSimilaresSp{
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 4rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #303030;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.main .vista-productoContain .seccion1 .preguntasContainGeneral{
+    width: 100%;
+    margin-top: 3rem;
+    height: max-content;
+    padding: 1.6rem;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+
+
+.main .vista-productoContain .seccion1 .preguntasContainGeneral span{
+    width: 100%;
+    text-align: left;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    color: #d36114cc;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.main .vista-productoContain .seccion1 .preguntasContainGeneral .preguntasDiv{
+    width: 100%;
+    height: 58rem;
+    border: 1px solid #d36114aa;
+    border-radius: 1rem;
+    margin-top: 1.4rem;
+    display: flex;
+    overflow-y: scroll; 
+}
+
+
+.main .vista-productoContain .seccion1 .preguntasDiv::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: .8rem;
+}
+
+
+.main .vista-productoContain .seccion1 .preguntasContainGeneral .preguntasDiv::-webkit-scrollbar-thumb{
+    background-color: #9e9e9e;
+    border-radius: .8rem;
+}
+
+
+.main .vista-productoContain .seccion1 .preguntasContainGeneral .preguntasDiv .preguntasDiv2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-right: 3.8rem;
+    padding-left: 3.8rem;
+    padding-bottom: 6rem;
+    position: relative;
+} 
+
+
+.vista-productoContain .seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    border-top: 1px solid #cc957b;
+    border-bottom: 1px solid #cc957b;
+    border-radius: 1rem;
+    overflow: hidden;  
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral:nth-child(1){
+    margin-top: 2rem;
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem;
+    
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .NombreUserPregun{
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    font-size: 2.2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #cc957b;
+    margin: 0;
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .ContenPregunta{
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 400;
+    color: #e0ad95;
+    margin: 1.4rem 0 0 0;
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv{
+    width: 100%;
+    height: fit-content;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0rem;
+    display: flex;
+    
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv .likeDiv{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    margin-right: 1.6rem;  
+}
+
+
+.preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv .likeDiv .like-icon{
+    width: 2rem;
+    height: fit-content;
+    fill: #cc957b;
+    margin-right: .2rem;
+}
+
+
+.preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv .likeDiv .spanLike{
+    font-size: 2rem;
+    color: #cc957b;
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv .dislikeDiv{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;  
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv .dislikeDiv .dislike-icon{
+    width: 2rem;
+    height: fit-content;
+    fill: #cc957b;
+    margin-right: .2rem;
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .btnLikesDiv .dislikeDiv .spanDislike{
+    font-size: 2rem;
+    color: #cc957b;
+}
+
+
+.seccion1 .preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .divBtns{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+.preguntasContainGeneral .preguntasDiv2 .preguntaDivContenido .divBtns button{
+    height: 4rem;
+    background-color: #ebcba8;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 0rem 1rem;
+    color: #704022;
+    font-weight: 400;
+    border: none;
+    transition: .4s;
+    cursor: pointer;   
+}
+
+
+.preguntasContainGeneral .preguntasDiv2 .preguntaDivContenido .divBtns button:hover{
+    background-color: #dfbc97;
+    color: #fff7f4;
+}
+
+
+.preguntasContainGeneral .preguntasDiv2 .preguntaDivGeneral .preguntaDivContenido .divBtns button:nth-child(1){
+    margin-right: 1.2rem;
+}
+
+
+.vista-productoContain .seccion1 .preguntasContainGeneral .preguntasDiv .preguntasDiv2 .divReponPregunta{
+    width: 100%;
+    height: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #FFE4C5;
+    padding-top: 2rem;
+}
+
+
+.preguntasDiv2 .divReponPregunta .userAResponSpan{
+    width: 100%;
+    margin-top: 1rem;
+    color: #68433188;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+
+.preguntasDiv2 .divReponPregunta textarea{
+    width: 90%;
+    height: 10rem;
+    resize: none;
+    border: none;
+    margin-top: 1rem;
+    outline: none;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    border-radius: 1rem; 
+}
+
+
+.preguntasDiv2 .divReponPregunta textarea:focus{
+    box-shadow: 0 0 1rem #fffbee;
+}
+
+
+.preguntasDiv2 .divReponPregunta .divBtnRC{
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem; 
+}
+
+
+.preguntasDiv2 .divReponPregunta .divBtnRC button{
+    border: none;
+    background-color: #ce9f80;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .4s;  
+}
+
+
+.divReponPregunta .divBtnRC button:hover{
+    background-color: #b8815d;
+    color: #ffffff; 
+}
+
+
+.preguntasDiv2 .divReponPregunta .divBtnRC .btnEnviarRespuesta{
+    margin-right: 1.2rem;
+    border: none;
+    background-color: #acacac;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    cursor: default;
+    transition: .4s;  
+}
+
+
+.preguntasDiv2 .divReponPregunta .divBtnRC .btnEnviarRespuesta:hover{
+    background-color: #acacac;
+    color: #ffffff; 
+}
+
+
+.preguntasDiv2 .divReponPregunta .divBtnRC .btnEnviarRespuesta2{
+    margin-right: 1.2rem;
+    border: none;
+    background-color: #ce9f80;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.preguntasDiv2 .divReponPregunta .divBtnRC .btnEnviarRespuesta2:hover{
+    background-color: #b8815d;
+    color: #ffffff; 
+}
+
+
+.vista-productoContain .seccion1 .preguntasContainGeneral .preguntasDiv .preguntasDiv2 .divPregunRespuestas{
+    width: 100%;
+    height: 0rem;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #f0f0f0;  
+} 
+
+
+.preguntasDiv .preguntasDiv2 .divPregunRespuestas .preguntaDivGeneral:last-child{
+    margin-bottom: 0;
+}
+
+
+.preguntasDiv .preguntasDiv2 .divPregunRespuestas .preguntaDivGeneral{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 0rem;
+    background-color: #f7f7f7;
+    overflow: hidden;  
+}
+
+
+.divPregunRespuestas .preguntaDivGeneral:nth-child(1){
+    margin-top: 2rem;
+}
+
+
+.divPregunRespuestas .preguntaDivGeneral .preguntaDivContenido{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 2rem;
+    border-left: 1px solid #c5c5c5;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .NombreUserPregun{
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    font-size: 2.2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #5c5c5c;
+    margin: 0; 
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .NombreUserPregun .barrita{
+    width: 3.6rem;
+    height: 1px;
+    background-color: #c5c5c5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2rem;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .NombreUserPregun .enRespuA{
+    color: #a0a0a0;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    width: 40rem;
+    height: fit-content;
+    transform: translateY(-50%);
+    left: 106%;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .NombreUserPregun .enRespuA span{
+    color: #838383;
+    font-size: 1.8rem;
+    font-weight: 600;
+    left: 15rem;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .ContenPregunta{
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 400;
+    color: #838383;
+    margin: 1.4rem 0 0 0;
+    padding-left: 3rem;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .btnLikesDiv{
+    width: 100%;
+    height: fit-content;
+    margin: 2rem 0rem 0rem 0rem;
+    padding-left: 3rem;
+    display: flex;  
+}
+
+
+.preguntaDivContenido .btnLikesDiv .likeDiv{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    margin-right: 1.6rem;  
+}
+
+
+.preguntaDivContenido .btnLikesDiv .likeDiv .like-icon{
+    width: 2rem;
+    height: fit-content;
+    fill: #838383;
+    margin-right: .2rem;
+}
+
+
+.preguntaDivContenido .btnLikesDiv .likeDiv .spanLike{
+    font-size: 2rem;
+    color: #838383;
+}
+
+
+.preguntaDivContenido .btnLikesDiv .dislikeDiv{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;  
+}
+
+
+.preguntaDivContenido .btnLikesDiv .dislikeDiv .dislike-icon{
+    width: 2rem;
+    height: fit-content;
+    fill: #838383;
+    margin-right: .2rem;
+}
+
+
+.preguntaDivContenido .btnLikesDiv .dislikeDiv .spanDislike{
+    font-size: 2rem;
+    color: #838383;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .divBtns{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin-top: 2rem;
+    padding-left: 3rem; 
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .divBtns button{
+    height: 4rem;
+    background-color: #e0e0e0;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 0rem 1rem;
+    color: #797979;
+    border: none;
+    transition: .4s;
+    cursor: pointer; 
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .divBtns button:hover{
+    background-color: #a8a8a8;
+    color: #eeeeee;
+}
+
+
+.preguntaDivGeneral .preguntaDivContenido .divBtns button:nth-child(1){
+    margin-right: 1.2rem;
+}
+
+
+.preguntasDiv .preguntasDiv2 .divPregunRespuestas .divReponPregunta{
+    width: 100%;
+    height: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    padding-top: 2rem; 
+}
+
+
+.divPregunRespuestas .divReponPregunta .userAResponSpan{
+    width: 100%;
+    margin-top: 1rem;
+    color: #46464688;
+    padding-left: 7.4rem;
+    font-size: 2rem;
+}
+
+
+.divPregunRespuestas .divReponPregunta textarea{
+    width: 80%;
+    height: 10rem;
+    resize: none;
+    border: none;
+    margin-top: 1rem;
+    outline: none;
+    margin-left: 7.4rem;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    border-radius: 1rem;   
+} 
+
+
+.divPregunRespuestas .divReponPregunta textarea:focus{
+    box-shadow: 0 0 1rem #fffbee;
+} 
+
+
+.divPregunRespuestas .divReponPregunta .divBtnRC{
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 7.4rem;
+    margin-bottom: 2rem;
+}
+
+
+.divPregunRespuestas .divReponPregunta .divBtnRC button:nth-child(1){
+    margin-right: 1.2rem;
+}
+
+
+.divPregunRespuestas .divReponPregunta .divBtnRC button{
+    border: none;
+    background-color: #c0c0c0;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .4s; 
+}
+
+
+.divPregunRespuestas .divReponPregunta .divBtnRC button:hover{
+    background-color: #929292;
+    color: #ffffff; 
+}
+
+
+.preguntasDiv .preguntasDiv2 .divPregunRespuestas .divPregunRespuestas{
+    width: 100%;
+    height: 0rem;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+} 
+
+
+.divPregunRespuestas .divPregunRespuestas .divNORespuestas{
+    width: 100%;
+    display: flex;
+    background-color: #E4E4E4;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
+}
+
+
+.divPregunRespuestas .divPregunRespuestas .divNORespuestas span:nth-child(1){
+    width: 100%;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #7a7a7a;
+}
+
+
+.divPregunRespuestas .divPregunRespuestas .divNORespuestas span:nth-child(2){
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0rem 0rem 2rem 0rem;
+    color: #7a7a7a;
+}
+
+
+.preguntasDiv .preguntasDiv2 .divPregunRespuestas .divNORespuestas{
+    width: 100%;
+    display: flex;
+    background-color: #FFE4C5;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;  
+}
+
+
+.divPregunRespuestas .divNORespuestas span:nth-child(1){
+    width: 100%;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #cc957b;
+}
+
+
+.divPregunRespuestas .divNORespuestas span:nth-child(2){
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0rem 0rem 2rem 0rem;
+    color: #cc957b;
+}
+
+
+.main .vista-productoContain .seccion1 .descripcionContain{
+    width: 100%;
+    height: max-content;
+    padding: 1.6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center; 
+}
+
+
+.seccion1 .descripcionContain div{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #535353;
+    height: max-content;
+    font-size: 2.6rem;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.seccion1 .descripcionContain div span{
+    width: 100%;
+    text-align: left;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    color: #303030;
+}
+
+
+.main .vista-productoContain .seccion1 .img-contentGeneral{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;  
+}
+
+
+.main .vista-productoContain .seccion1 .img-contentGeneral .img-principal{
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .5rem .5rem .5rem #68686866;
+    border-radius: 1rem;
+    height: 65.2rem;
+    margin-left: 2rem;
+}
+
+
+.main .vista-productoContain .seccion1 .img-contentGeneral .img-secundarias{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.2rem;
+    height: max-content;
+    align-items: center;
+    gap: 1rem;   
+}
+
+
+.main .vista-productoContain .seccion1 .img-contentGeneral .img-secundarias .imgSecundaria{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.main .vista-productoContain .seccion1 .productosInteres{
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    height: max-content;
+    display: grid;
+    padding-bottom: 2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    column-gap: 4rem;
+    overflow-x: scroll;
+}
+
+
+.main .vista-productoContain .seccion1 .productosInteres button{
+    border-radius: 1rem;
+    background-color: #c49380;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .5rem .5rem .5rem #00000044;
+    border: none;
+    cursor: pointer; 
+}
+
+
+.seccion1 .productosInteres button:hover{
+    background-color: #ddb3a2;
+}
+
+
+.seccion1 .productosInteres button:hover .imgContaint img{
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+
+.main .vista-productoContain .seccion1 .productosInteres button .imgContaint{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 26rem;   
+}
+
+
+.seccion1 .productosInteres button .imgContaint img{
+    transition: .4s;
+}
+
+
+.main .vista-productoContain .seccion1 .productosInteres button .dataContaint{
+    width: 100%;
+    display: flex;
+    height: 6rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.seccion1 .productosInteres button .dataContaint span{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    color: #72482e;
+}
+
+
+.main .vista-productoContain .seccion1 .productosInteres::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 1rem;
+}
+
+
+.main .vista-productoContain .seccion1 .productosInteres::-webkit-scrollbar-thumb{
+    background-color: #9e9e9e;
+    border-radius: .8rem;
+}
+
+
+.main .vista-productoContain .seccion2{
+    width: 35%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffe4c5;
+    position: relative;
+    justify-content: center;
+    border-radius: 1rem 1rem 1rem 0;
+}
+
+
+.btnContainerCom{
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    margin-top: 0;
+    height: max-content;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 .6rem 1rem #00000044;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.btnContainerCom .nombreSpan{
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    margin: 2rem 0;
+    text-align: left;
+    padding-left: 2rem;
+    color: #202020dd;
+}
+
+
+.btnContainerCom .precioSpan{
+    width: 100%;
+    font-size: 4.6rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-align: left;
+    padding-left: 2rem;
+    color: #0b8b0b;
+}
+
+
+.btnContainerCom .btnDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.btnContainerCom #btnCarrito{
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #4067a1;
+    color: #ffffdd;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    height: 8rem;
+    font-size: 2.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    border: none; 
+}
+
+
+.btnContainerCom #btnCarrito:hover{
+    background-color: #8fcae2;
+}
+
+
+.btnContainerCom #btnComprar{
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #7ca140;
+    color: #ffffdd;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    height: 8rem;
+    font-size: 2.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    border: none; 
+}
+
+
+.btnContainerCom #btnComprar:hover{
+    background-color: #cce28f;
+}
+
+
+.img-activa{
+    box-shadow: 0 0 1rem #aaaaaa, 0 0 1rem #aaaaaa, 0 0 1rem #aaaaaa;
+}
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d36114; 
+}
+
+
+.footer .copy{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ffffdd;
+    font-family: 'Stellar', sans-serif;
+    font-weight: 500;
+}

@@ -1,0 +1,1445 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    font-size: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+:root[typeu="neutral"]{
+    --displayDivModoUser: none;
+}
+
+
+:root[typeu="#ad64"]{
+    --displayDivModoUser: flex;
+}
+
+
+:root[typeu="#ld45"]{
+    --displayDivModoUser: none;
+}
+
+
+.divNoEncontrados{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    position: absolute;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #b95716;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.fondoNegroModal{
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+.fondoNegroModal2{
+    display: none;
+}
+
+
+.baseCarrito .baseCarrito2 svg{
+    fill: #B95716;
+}
+
+
+.baseCarrito span{
+    color: #B95716;
+}
+
+
+.modalBase2{
+    display: none;
+}
+
+
+.modalBase{
+    position: fixed;
+    z-index: 1100;
+    left: 50%;
+    top: 10rem;
+    transform: translateX(-50%);
+    width: 90rem;
+    height: max-content;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modalBase .btnX{
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+
+.modalBase .MicarritoSpan{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 2rem 0 1rem 0rem;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #B95716;
+}
+
+
+.modalBase .listaDiv{
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0rem 2rem 0rem 2rem;
+    display: flex; 
+}
+
+
+.modalBase .listaDiv ul{
+    width: 100%;
+    height: max-content;
+    border: 1px solid #dddddd;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+.modalBase .listaDiv ul li{
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;  
+}
+
+
+.modalBase .listaDiv ul li div{
+    width: 100%;
+    display: flex;
+    padding: 0rem;
+    justify-content: flex-end;
+}
+
+
+.modalBase .listaDiv ul li div span{
+    width: 90%;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+
+.modalBase .listaDiv ul li div div{
+    width: 10%;
+    font-size: 2rem;
+}
+
+
+.modalBase .listaDiv ul .liTotal{
+    width: 100%;
+    border-top: 1px solid #dddddd;
+    padding: 1rem 2rem;
+}
+
+
+.modalBase .listaDiv ul .liTotal div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+
+.modalBase .listaDiv ul .liTotal div .totalMoneda{
+    flex-grow: 1;
+    font-size: 2rem;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+
+.modalBase .listaDiv ul .liTotal div .totalNumero{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.modalBase .modalBtnsDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 2rem 2.2rem;
+    justify-content: flex-end;
+}
+
+
+.modalBase .modalBtnsDiv .botonCPEDIDO{
+    width: max-content;
+    height: max-content;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #285f83;
+    color: #ffffdd;
+    font-size: 2rem;
+    margin-right: 1.4rem;
+    transition: .4s;
+}
+
+
+.modalBase .modalBtnsDiv .botonCPEDIDO:hover{
+    background-color: #4280a8;
+}
+
+
+.modalBase .modalBtnsDiv .vaciarCarrito{
+    width: max-content;
+    height: max-content;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #832828;
+    color: #ffffdd;
+    font-size: 2rem;
+    transition: .4s;
+}
+
+
+.modalBase .modalBtnsDiv .vaciarCarrito:hover{
+    background-color: #a14040;
+}
+
+
+.Header{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #fcf4eb;
+}
+
+
+.Header .headerdiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.Header div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.Header div .img-logo-containt{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    position: relative;
+}
+
+
+.Header .btnTemaContainer{
+    width: 100%;
+    background-color: #c97f00cc;
+    display: inline-flex;
+    justify-content: center;
+    height: 5rem;
+}
+
+
+.Header .logo-contain{
+    width: 9rem;
+    height: max-content;
+    margin-top: 2rem;
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+.Header .imgPath{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    z-index: 100;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 45%;
+    z-index: 50;
+    height: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath2 div{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    background-color: #fcf4eb;
+    filter: opacity(20%);
+}
+
+
+.Header .imgPath2 img{
+    transform: scaleX(-1);
+}
+
+
+.Header .imgPath3{
+    overflow: hidden;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    width: 58%;
+    height: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+.Header .imgPath3 div{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    background-color: #fcf4eb;
+    filter: opacity(60%);
+}
+
+
+.Header .Header_Nav{
+    background-color: #df681933;
+    border-top: 2px solid #b95716;
+    border-bottom: 5px solid #b95716;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 6rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Header .Header_Nav .divRelle{
+    height: 100%;
+    width: 9.2%;
+    left: 66%;
+    transform: translateX(-100%);
+    background-color: #b9571666;
+    position: absolute;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint{
+    width: 66%;
+    height: 100%; 
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li{
+    display: flex;
+    align-items: center;  
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li:nth-child(1) .enlace{
+    padding-left: 3rem !important; 
+    padding-right: 3rem !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+    background-color: #b95716;
+    color: #fcf4eb;
+    cursor: default;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li .enlace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #b95716;
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+    cursor: pointer; 
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .nav-lisContaint li .enlace:hover{
+    background-color: #b95716;
+    color: #fcf4eb;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 34%;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #b95716;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace span{
+    color: #fcf4eb;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover{
+    background-color:  #f7d8c1;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover span{ 
+    color: #b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover .icon-user{
+    fill:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .user-enlace:hover .icon-entrar{
+    fill:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #b95716;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace span{
+    color:#fcf4eb;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins Regular', sans-serif;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace:hover{
+    background-color: #f7d8c1;
+}
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-salir{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace:hover svg{
+    fill:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .salir-enlace:hover span{
+    color:#b95716;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-user{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-entrar{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.Header .Header_Nav .Header_Nav-UL .iniRegiContain .icon-regis{
+    width: 10%;
+    height: max-content;
+    fill: #fcf4eb;
+    transition: .4s;
+}
+
+
+.body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 18rem;
+}
+
+
+.body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 1rem;
+}
+
+
+.body::-webkit-scrollbar-thumb{
+    background-color: #9e9e9e;
+    border-radius: .8rem;
+}
+
+
+.body .div-administrador{
+    display: var(--displayDivModoUser);
+    position: fixed;
+    cursor: default;
+    top: 0;
+    left: 0;
+    width: 22%;
+    z-index: 1800;
+    height: max-content;
+    background-color: #111122dd;
+    overflow: hidden;
+    border-radius: 0 0 1rem 0;
+}
+
+
+.body .div-administrador div{
+    display: flex;
+}
+
+
+.body .div-administrador div:nth-child(1){
+    position: relative;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+.body .div-administrador div:nth-child(1) .administracionA{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2rem 1.8rem;
+    text-decoration: none;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #dddddd;
+    cursor: pointer;
+    background-color: #ddddee22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;  
+}
+
+
+.body .div-administrador div:nth-child(1) .administracionA:hover{
+    color: #7a7af0;
+}
+
+
+.body .div-administrador div:nth-child(2){
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: .5rem;
+}
+
+
+.body .div-administrador div:nth-child(2) span{
+    text-align: left;
+    color: #999999;
+    font-size: 1.5rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+} 
+
+
+.body .div-administrador div:nth-child(2) div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: max-content;
+    padding: 0;
+    margin-top: .6rem;   
+}
+
+
+.body .div-administrador div:nth-child(2) div .VistaPrevia{
+    width: max-content;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #999999;
+    padding: 0 0 0 .4rem;
+}
+
+
+.body .div-administrador div:nth-child(2) div svg{
+    width: 22%;
+    height: max-content;
+    fill:#999999;
+}
+
+
+.body .main{
+    max-width: 100%;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    justify-content: center; 
+}
+
+
+.body .main .div1{
+    width: 100%;
+    display: flex;
+}
+
+
+.body .main .containProduct{
+    width: 72%;
+    height: 150rem;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #adadad44;
+    flex-direction: column;
+}
+
+
+.body .main .containProduct .tituloProduc-contain{
+    width: 40%;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    background-color: #fcf4ea;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 26rem;
+    border-bottom: 1px solid #b95716;
+}
+
+
+.body .main .containProduct .tituloProduc-contain .spanCategoria{
+    font-size: 3rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    color: #b95716;
+}
+
+
+.body .main .containProduct .tituloProduc-contain .spanTipo{
+    margin-top: 1rem;
+    font-size: 2.6rem;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #b95716bb;
+}
+
+
+.body .main .spanPrin2{
+    width: 100%;
+    font-size: 3.4rem;
+    margin: 5rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.body .main .pPrin{
+    font-size: 2.4rem;
+}
+
+
+.body .main .filtros_contain{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 26rem;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 1px solid #b95716;
+    border-bottom: 1px solid #b95716;
+    background-color: #fcf4ea;
+}
+
+
+.body .main .filtros_contain .filtros-contain2{
+    width: 100%;
+    display: flex;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-categoria{
+    width: 30%;
+    display: flex;
+    height: 8rem;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: flex-start;
+    overflow: hidden;  
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-categoria label{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #b95716;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-categoria select{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1rem 1rem 0rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: #7c7c7c;
+    background-color: #adadad44;
+    border-radius: 1rem;
+    padding-left: 1rem;   
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-categoria select option{
+    font-size: 1.8rem;
+    background-color: #adadad44;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-tipo{
+    width: 30%;
+    display: flex;
+    height: 8rem;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-tipo label{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 100%;
+    color: #b95716;
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 1.8rem;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-tipo select{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1rem 1rem 0rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: #7c7c7c;
+    background-color: #adadad44;
+    border-radius: 1rem;
+    padding-left: 1rem; 
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-tipo select option{
+    font-size: 1.8rem;
+    background-color: #adadad44;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-precio{
+    width: 30%;
+    display: flex;
+    height: 8rem;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: flex-start;
+    overflow: hidden;  
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-precio label{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #b95716;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-precio select{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1rem 1rem 0rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: #7c7c7c;
+    background-color: #adadad44;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+
+.body .main .filtros_contain .filtros-contain2 .div-precio select option{
+    font-size: 1.8rem;
+    background-color: #adadad44;
+}
+
+
+.body .main .filtros_contain .filtrosSpan{
+    text-align: start;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    margin-left: 2rem;
+    color: #b95716;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.body .main .filtros_contain .div-bEspecifica{
+    width: 100%;
+    height: max-content;
+    padding-right: 2rem;
+    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    border: 1px solid #b95716;
+    border-radius: 1rem;
+}
+
+
+.body .main .filtros_contain .div-bEspecifica span{
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 1.6rem;
+    font-size: 1.8rem;
+    color: #b95716;
+}
+
+
+.body .main .filtros_contain .div-bEspecifica input{
+    width: 94%;
+    margin: 1rem 2rem 1.5rem 2rem;
+    background-color: #adadad44;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;  
+}
+
+
+.body .main .filtros_contain .div-bEspecifica input::placeholder{
+    color: #7c7c7c;
+}
+
+
+.body .main #product_contain{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    padding: 2rem 4rem 2rem 2rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    position: relative;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
+}
+
+
+.body .main #product_contain .aProducto{
+    border: none;
+    background-color: #ffffff00;
+    box-shadow: .4rem .4rem 3rem #00000022;
+    text-decoration: none;
+} 
+
+
+.body .main #product_contain .aProducto::-webkit-file-upload-button{
+    -webkit-appearance: none;
+}
+
+
+.body .main #product_contain .aProducto .anuncio{
+    height: 100%;
+    background-color: #d8cdc4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+.body .main #product_contain .aProducto .anuncio:hover{
+    background-color: #e2d2c5;  
+}
+
+
+.body .main #product_contain .aProducto .anuncio:hover .img-contain img{
+    position: absolute;
+    width: 110%;
+    height: 110%;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun{
+    color: #8b6c5b;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion .califDivGeneral .barraBaseCPDT svg{
+    fill: #be956e;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .img-contain{
+    height: 32rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+
+.body .main #product_contain .aProducto .anuncio .img-contain img{
+    transition: .3s;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: max-content;   
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-nombre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    font-family: 'Poppins Regular', sans-serif;
+    font-weight: 600;
+    color: #664736;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion{
+    width: 100%;
+    font-size: 1rem;
+    background-color: #9b705d;
+    text-align: left;
+    height: 3.6rem;
+    padding-left: 1rem;    
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion .califDivGeneral{
+    height: 100%;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion .califDivGeneral .porReseSpan{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #ffc851;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion .califDivGeneral .barraBaseCPDT{
+    width: 65%;
+    height: 2.355rem;
+    background-color: #b9a897;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion .califDivGeneral .barraBaseCPDT svg{
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    fill: #9b705d;
+    top: 0;
+    left: 0;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-calificacion .califDivGeneral .canReseSpan{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff7e7;
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body .main #product_contain .aProducto .anuncio .contenido-anun .anun-precio{
+    width: 100%;
+    height: max-content;
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 3.1rem;
+    margin-top: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+    font-weight: 550;
+    color: #49a513;
+}
+
+
+.body .main #product_contain .aProducto .btnCarrito{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #a0480e;
+    border-radius: 0 0 1rem 1rem;
+}
+
+
+.body .main #product_contain .aProducto .btnCarrito svg{
+    width: 4rem;
+    height: max-content;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #ffffff;
+}
+
+
+.body .main #product_contain .aProducto .btnCarrito input{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    background-color: #a0480e;
+    cursor: pointer;
+}
+
+
+.body .main .sugeridos-contain{
+    width: 28%;
+    background-color: #ec8e4e;
+    height: 130rem;
+    border-right: 4px solid #ec8e4e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    border-radius: 0 0 1rem 0;
+}
+
+
+.body .main .sugeridos-contain::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 1rem;
+}
+
+
+.body .main .sugeridos-contain::-webkit-scrollbar-thumb{
+    background-color: #fffcf4;
+    border-radius: 1rem;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #f0aa7b;
+    border-radius: 0rem 1rem 0rem 0rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv:last-child{
+    margin-bottom: 10rem;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv{
+    width: 100%;
+    transition: .2s;
+    height: max-content;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    background-color: #bb6644;
+    cursor: pointer;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv img{
+    transition: .2s;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-imageContain{
+    overflow: hidden;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-nombre{
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fffcf4;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion{
+    width: 100%;
+    height: 4rem;
+    transition: .2s;
+    background-color: #d37753;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral{
+    width: 26rem;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;  
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .porceRese{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffdf2c;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .barraBase{
+    width: 15.885rem;
+    position: relative;
+    height: 2.398rem;
+    background-color: #994d2f;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .porceRese{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffdf2c;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .barraBase{
+    width: 15.885rem;
+    position: relative;
+    height: 2.398rem;
+    background-color: #ce4e1b;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .barraBase svg{
+    height: 2.4rem;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: #d37753;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .cantRese{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FCF3E2;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-calificacion .califGeneral .cantRese{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FCF3E2;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-precio{
+    width: 100%;
+    font-size: 3.8rem;
+    background-color: #aa502c;
+    transition: .2s;
+    padding: 1rem;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #6ee62a;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv .btn-infoContain .btn-descri{
+    margin: 0 2rem 3rem 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fffcf4;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv:hover{
+    background-color: #cf824e; 
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv:hover .btn-imageContain img{
+    width: 110%;
+    height: 110%;
+    position: absolute;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv:hover .btn-infoContain .btn-calificacion{
+    background-color: #e68e6b;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv:hover .btn-infoContain .btn-calificacion .califGeneral .barraBase svg{
+    fill: #e68e6b;
+}
+
+
+.body .main .sugeridos-contain .masVendidosDiv .btn-productMv:hover .btn-infoContain .btn-precio{
+    background-color: #cf7754;
+}
+
+
+.main .sugeridos-contain .tituloP{
+    width: 100%;
+    height: 10rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: left;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #fff3cd;
+    justify-content: left;
+    padding-left: 4rem;
+    border-radius: 0rem 0rem 1rem 0rem;
+    background-color: #e97f39dd;
+}
+
+
+.body .main #product_contain .aProducto .anuncio #divAnunDescri{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: first baseline;
+    justify-content: left;
+    padding: 1rem 2rem 1.5rem 2rem;
+    color: #333333;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d36114; 
+}
+
+
+.footer .copy{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ffffdd;
+    font-family: 'Stellar', sans-serif;
+    font-weight: 500;
+}
+
